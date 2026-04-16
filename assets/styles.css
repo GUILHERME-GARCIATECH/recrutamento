@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main {
+    display: flex;
+    flex-direction: column; /* Empilha as seções uma em cima da outra */
+    gap: 40px;              /* Cria um espaço de 40px entre cada item do main */
+}
+body{
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    padding: 40px 20px;
+}
+
+section{
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.secao-admin {
+    background-color: #f7f8ed; 
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.titulo {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.descricao {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 10px;
+    color: #007bff;
+}
+
+div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block; /* Faz o label ficar em cima do input */
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+select,
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0,123,255,0.2);
+}
+
+button{
+    width: 100%;
+    padding: 12px;
+    margin-top: 7px;
+    background-color: #727261; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #5e6d62;
+}
+
+#btn-enviar{
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745; /* Verde para ação positiva */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    
+}
+
+#btn-enviar:hover {
+    background-color: #218838;
+}
+

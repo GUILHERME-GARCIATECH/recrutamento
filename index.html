@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recrutamento Tech</title>
+    <link rel="stylesheet" href="/assets/styles.css">
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <section>
+            <h1 class="titulo">FORMULARIO DE INSCRIÇÃO</h1>
+            <p class="descricao">Vagas abertas para Desenvolvedor WEB</p>
+
+            <form id="form">
+
+                <!-- SEÇÃO 1: Informações pessoais -->
+                <fieldset>
+                    <legend>1. Informações Básicas</legend>
+                    <div>
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome aqui" required>
+                    </div>
+                    <div>
+                        <label for="email">Seu e-mail corporativo/pessoal</label>
+                        <input type="email" id="email" name="email" placeholder="email@exemplo.com" required>
+                    </div>
+                </fieldset>
+
+                <!-- SEÇÃO 2: Perfil Técnico -->
+                <fieldset>
+                    <legend>2. Experiência e Stack</legend>
+                    <div>
+                        <label for="senioridade">Nível de Senioridade:</label>
+                        <select name="senioridade" id="senioridade">
+                            <option value="junior">Júnior</option>
+                            <option value="pleno">Pleno</option>
+                            <option value="senior">Sênior</option>
+                            <option value="especialista">Especialista / Staff</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="tmp-experiencia">Tempo de experiencia</label>
+                        <input type="text" id="tmp-experiencia" name="tmp-experiencia" placeholder="Experiência (Ex: 2 anos)">
+                    </div>
+
+                    <div>
+                        <label>Tecnologias dominadas:</label>
+                        <label for="html">HTML5</label>
+                        <input type="checkbox" id="html" name="stacks" value="html">
+                        <label for="typescript">TypeScript</label>
+                        <input type="checkbox" id="typescript" name="stacks" value="typescript">
+                        <label for="javascript">JavaScript</label>
+                        <input type="checkbox" id="javascript" name="stacks" value="javascript">
+                        <label for="nodejs">NODE.JS</label>
+                        <input type="checkbox" id="nodejs" name="stacks" value="nodejs">
+                    </div>
+                    <div>
+                        <label for="portifolio">Link do seu Portifólio</label>
+                        <input type="url" id="portifolio" name="portifolio"
+                            placeholder="https://github.com/seuportifolio" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>3. LinkedIn e Pitch</legend>
+                    <div>
+                        <label for="linkedin">Link do seu LinkedIn</label>
+                        <input type="url" id="linkedin" name="linkedin" placeholder="https://br.linkdein.com/seuperfil"
+                            required>
+                    </div>
+                    <div>
+                        <label for="mensagem">Por que você quer trabalhar conosco?</label>
+                        <textarea name="mensagem" id="mensagem" rows="4" placeholder="Conte um pouco sobre seus maiores desafios técnicos..."></textarea>
+                    </div>
+                </fieldset>
+                <button type="submit" id="btn-enviar">Enviar Candidatura</button>
+            </form>
+        </section>
+        
+        <section class="secao-admin">
+            <h2>Painel de ações</h2>
+            <button onclick="listartodos()">Listar todos</button>
+            <button onclick="filtarSeniores()">Filtrar (+5 anos)</button>
+            <button onclick="calcularMediaXP()">Media de experiencia</button>
+
+            <h3>Resultado</h3>
+            <div id="resultado">Nenhum resultado ainda</div>
+        </section>
+
+        
+
+        
+    </main>
+
+    <script src="/assets/functions.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
