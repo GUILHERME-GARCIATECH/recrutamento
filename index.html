@@ -18,7 +18,7 @@
             <h1 class="titulo">FORMULARIO DE INSCRIÇÃO</h1>
             <p class="descricao">Vagas abertas para Desenvolvedor WEB</p>
 
-            <form id="form">
+            <form id="formCandidato">
 
                 <!-- SEÇÃO 1: Informações pessoais -->
                 <fieldset>
@@ -46,8 +46,8 @@
                         </select>
                     </div>
                     <div>
-                        <label for="tmp-experiencia">Tempo de experiencia</label>
-                        <input type="text" id="tmp-experiencia" name="tmp-experiencia" placeholder="Experiência (Ex: 2 anos)">
+                        <label for="tmpExperiencia">Tempo de experiencia</label>
+                        <input type="text" id="tmpExperiencia" name="tmpExperiencia" placeholder="Experiência (Ex: 2 anos)">
                     </div>
 
                     <div>
@@ -63,12 +63,11 @@
                     </div>
                     <div>
                         <label for="portifolio">Link do seu Portifólio</label>
-                        <input type="url" id="portifolio" name="portifolio"
-                            placeholder="https://github.com/seuportifolio" required>
+                        <input type="url" id="portifolio" name="portifolio" placeholder="https://github.com/seuportifolio" required>
                     </div>
                 </fieldset>
 
-                <fieldset>
+                <!-- <fieldset>
                     <legend>3. LinkedIn e Pitch</legend>
                     <div>
                         <label for="linkedin">Link do seu LinkedIn</label>
@@ -79,7 +78,7 @@
                         <label for="mensagem">Por que você quer trabalhar conosco?</label>
                         <textarea name="mensagem" id="mensagem" rows="4" placeholder="Conte um pouco sobre seus maiores desafios técnicos..."></textarea>
                     </div>
-                </fieldset>
+                </fieldset> -->
                 <button type="submit" id="btn-enviar">Enviar Candidatura</button>
             </form>
         </section>
@@ -99,7 +98,6 @@
         
     </main>
 
-    <script src="/assets/functions.js"></script>
     <script src="app.js"></script>
 </body>
 
