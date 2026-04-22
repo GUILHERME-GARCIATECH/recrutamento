@@ -5,7 +5,7 @@ document.getElementById('formCandidato').addEventListener('submit', function (ev
 
     const nome = document.getElementById('nome').value;
     const email = document.getElementById('email').value;
-    const senioriedade = document.getElementById('senioridade').value;
+    const senioridade = document.getElementById('senioridade').value;
     const tmpExperiencia = document.getElementById('tmpExperiencia').value;
     const portifolio = document.getElementById('portifolio').value;
 
