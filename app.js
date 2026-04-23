@@ -46,6 +46,7 @@ function listartodos() {
     </div>`).join('');
 }
 
+
 function filtarSeniores() {
     res.innerHTML = '';
 
@@ -71,7 +72,7 @@ function calcularMediaXP() {
         res.innerHTML = `<p>Nenhum candidato cadastrado!</p>`
         return;
     }
-    
+
     const soma = bancoDeCandidatos.reduce((acc, cur) => acc + cur.tmpExperiencia, 0);
     const mediaEX = bancoDeCandidatos.length > 0 ? soma / bancoDeCandidatos.length : 0;
 
