@@ -46,8 +46,9 @@
                         </select>
                     </div>
                     <div>
-                        <label for="tmpExperiencia">Tempo de experiencia</label>
-                        <input type="text" id="tmpExperiencia" name="tmpExperiencia" placeholder="Experiência (Ex: 2 anos)">
+                        <label for="tmpExperiencia">Tempo de experiencia (em anos)</label>
+                        <input type="text" id="tmpExperiencia" name="tmpExperiencia"
+                            placeholder="Experiência (Ex: 2 anos)">
                     </div>
 
                     <div>
@@ -63,26 +64,15 @@
                     </div>
                     <div>
                         <label for="portifolio">Link do seu Portifólio</label>
-                        <input type="url" id="portifolio" name="portifolio" placeholder="https://github.com/seuportifolio" required>
+                        <input type="url" id="portifolio" name="portifolio"
+                            placeholder="https://github.com/seuportifolio" required>
                     </div>
                 </fieldset>
 
-                <!-- <fieldset>
-                    <legend>3. LinkedIn e Pitch</legend>
-                    <div>
-                        <label for="linkedin">Link do seu LinkedIn</label>
-                        <input type="url" id="linkedin" name="linkedin" placeholder="https://br.linkdein.com/seuperfil"
-                            required>
-                    </div>
-                    <div>
-                        <label for="mensagem">Por que você quer trabalhar conosco?</label>
-                        <textarea name="mensagem" id="mensagem" rows="4" placeholder="Conte um pouco sobre seus maiores desafios técnicos..."></textarea>
-                    </div>
-                </fieldset> -->
                 <button type="submit" id="btn-enviar">Enviar Candidatura</button>
             </form>
         </section>
-        
+
         <section class="secao-admin">
             <h2>Painel de ações</h2>
             <button onclick="listartodos()">Listar todos</button>
@@ -90,12 +80,9 @@
             <button onclick="calcularMediaXP()">Media de experiencia</button>
 
             <h3>Resultado</h3>
-            <div id="resultado">Nenhum resultado ainda</div>
+            <div id="resultado"><p>Nenhum resultado ainda...</p></div>
         </section>
 
-        
-
-        
     </main>
 
     <script src="app.js"></script>
