@@ -24,10 +24,10 @@ document.getElementById('formCandidato').addEventListener('submit', function (ev
 
     bancoDeCandidatos.push(novoCandidato);
     this.reset();
-    console.log(bancoDeCandidatos);
 });
 
 let res = document.getElementById('resultado');
+
 function listartodos() {
     res.innerHTML = ''
 
@@ -52,6 +52,11 @@ function filtarSeniores() {
 
     const experientes = bancoDeCandidatos.filter(c => c.tmpExperiencia > 5);
 
+    if (bancoDeCandidatos.length == 0) {
+        res.innerHTML = `<p>Nenhum candidato cadastrado!</p>`
+        return;
+    }
+    
     if (experientes.length == 0) {
         res.innerHTML = `<p>Nenhum candidato tem a experiência necessária!</p>`
         return;
@@ -78,3 +83,19 @@ function calcularMediaXP() {
 
     res.innerHTML = `<p>A média de experiência dos candidato é ${mediaEX.toFixed(2)}</p>`
 }
+
+function buscar(){
+    res.innerHTML='';
+
+    if (bancoDeCandidatos.length == 0){
+        res.innerHTML = `<p>Nenhum candidato cadastrado!</p>`
+        return;
+    }
+
+    const busca = document.getElementById('busca').value.trim().toLowerCase();
+    const resultadoBusca = bancoDeCandidatos.filter(c => {
+        return c.nome.toLowerCase().includes(busca)});
+
+    res.innerHTML = resultadoBusca.map(c => `<p>Candidato: ${c.nome}</p>`).join('');
+}
+

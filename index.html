@@ -54,13 +54,17 @@
                     <div>
                         <label>Tecnologias dominadas:</label>
                         <label for="html">HTML5</label>
-                        <input type="checkbox" id="html" name="stacks" value="html">
+                        <input type="checkbox" id="html" name="stack" value="HTML">
                         <label for="typescript">TypeScript</label>
-                        <input type="checkbox" id="typescript" name="stacks" value="typescript">
+                        <input type="checkbox" id="typescript" name="stack" value="TypeScript">
                         <label for="javascript">JavaScript</label>
-                        <input type="checkbox" id="javascript" name="stacks" value="javascript">
+                        <input type="checkbox" id="javascript" name="stack" value="JavaScript">
                         <label for="nodejs">NODE.JS</label>
-                        <input type="checkbox" id="nodejs" name="stacks" value="nodejs">
+                        <input type="checkbox" id="nodejs" name="stack" value="NODE.js">
+                        <label for="nodejs">NESTJS</label>
+                        <input type="checkbox" id="nastjs" name="stack" value="NESTJS">
+                        <label for="nodejs">NEXT.JS</label>
+                        <input type="checkbox" id="nextjs" name="stack" value="next.js">
                     </div>
                     <div>
                         <label for="portifolio">Link do seu Portifólio</label>
@@ -78,6 +82,9 @@
             <button onclick="listartodos()">Listar todos</button>
             <button onclick="filtarSeniores()">Filtrar (+5 anos)</button>
             <button onclick="calcularMediaXP()">Media de experiencia</button>
+            <label for="">Buscar Candidatos por nome</label>
+            <input type="text" name="busca" id="busca">
+            <button onclick="buscar()">Realizar buscar por nome</button>
 
             <h3>Resultado</h3>
             <div id="resultado"><p>Nenhum resultado ainda...</p></div>
