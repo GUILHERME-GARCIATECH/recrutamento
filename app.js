@@ -42,7 +42,7 @@ function listartodos() {
     <p>Senioridade: ${candidato.senioridade}</p>
     <p>Tempo de experiência: ${candidato.tmpExperiencia} anos</p>
     <p>Link do Portifolio: ${candidato.portifolio}</p>
-    <p>Stacks: ${candidato.tecnologias.join(', ')}</p>
+    <p>Stacks: ${candidato.tecnologias > 0 ? candidato.tecnologias.join(', ') : "Nenhuma Stack informada"}</p>
     </div>`).join('');
 }
 
@@ -56,7 +56,7 @@ function filtarSeniores() {
         res.innerHTML = `<p>Nenhum candidato cadastrado!</p>`
         return;
     }
-    
+
     if (experientes.length == 0) {
         res.innerHTML = `<p>Nenhum candidato tem a experiência necessária!</p>`
         return;
